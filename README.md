@@ -33,7 +33,7 @@ If you have obtained the @b xml source code from a GIT repository, then execute 
 
 For both GIT clones and GNU Package tarballs, run the usual `./configure` followed by `make`.
 
-To install the built `xmlread` utility and **libxml** library, run `sudo make install`.
+To install the built `gensym` utility, run `sudo make install`.
 
 [Back to Table of Contents](#TOC)
 
