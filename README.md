@@ -69,7 +69,7 @@ gensym v1.0.0
 <a id="known-issues-and-limitations"></a>
 ## Known issues and limitations
 
-At the time of writing of this document, there are no known issues with the @b gensym software.
+At the time of writing of this document, there are no known issues with the <b>gensym</b> software.
 
 [Back to Table of Contents](#TOC)
 
