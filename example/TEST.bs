@@ -1,0 +1,378 @@
+refdes U?
+
+# a comment
+
+pinalign left start
+pinalign right center
+pinalign bottom center
+pinalign top center
+
+attr_invis device THING
+attr_invis footprint dip(n=40,spacing=700mil)
+attr_invis funcmap TEST.funcmap
+
+attr_invis 	  -sym-source       edakrill/patrickhread  	
+attr_invis -sym-copyright    (C) 2026 Patrick Head
+attr_invis -sym-license-dist GPLv2+
+attr_invis -sym-license-use  Public Domain
+
+begin slot power
+
+	shape box
+
+	attr_invis device THING Power
+  attr_invis -sym-source       edakrill/patrickhread
+  attr_invis -sym-copyright    (C) 2026 Patrick Head
+  attr_invis -sym-license-dist GPLv2
+  attr_invis -sym-license-use  Public Domain
+
+  begin pin GND3
+    num 3
+    label GND
+    loc left
+  end pin
+
+  begin pin GND8
+    num 8
+    label GND
+    loc left
+  end pin
+
+  begin pin GND13
+    num 13
+    label GND
+    loc left
+  end pin
+
+  begin pin GND18
+    num 18
+    label GND
+    loc left
+  end pin
+
+  begin pin GND23
+    num 23
+    label GND
+    loc right
+  end pin
+
+  begin pin GND28
+    num 28
+    label GND
+    loc right
+  end pin
+
+  begin pin GND33
+    num 33
+    label GND
+    loc right
+    funcmap
+  end pin
+
+	begin pin 3V3
+		num 36
+		label 3V3
+    dir out
+		loc right
+    invcirc
+	end pin
+
+  begin pin GND38
+    num 38
+    label GND
+    loc right
+  end pin
+
+	begin pin VSYS
+		num 39
+		label VSYS
+		loc right
+	end pin
+
+	begin pin VBUS
+		num 40
+		label VBUS
+		loc right
+	end pin
+
+  begin pin GND42
+    num 42
+    label GND
+    loc bottom
+    invcirc
+  end pin
+
+  begin pin GND44
+    num 44
+    label GND
+    loc top
+    invcirc
+  end pin
+
+	pinalign top center
+	pinalign bottom center
+	pinalign left center
+	pinalign right center
+
+end slot
+
+begin slot control
+
+	shape box
+	attr_invis device THING Control
+  attr_invis -sym-source       edakrill/patrickhread
+  attr_invis -sym-copyright    (C) 2026 Patrick Head
+  attr_invis -sym-license-dist GPLv2
+  attr_invis -sym-license-use  Public Domain
+
+  begin pin RUN
+    num 30
+    label RUN
+    loc right
+    dir in
+  end pin
+
+  begin pin 3V3_EN
+    num 37
+    label 3V3_EN
+    loc right
+  end pin
+
+end slot
+
+begin slot gpio
+
+	shape box
+	attr_invis device THING GPIO
+  attr_invis -sym-source       edakrill/patrickhread
+  attr_invis -sym-copyright    (C) 2026 Patrick Head
+  attr_invis -sym-license-dist GPLv2
+  attr_invis -sym-license-use  Public Domain
+
+  begin pin GP0
+    num 1
+    label GP0
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP1
+    num 2
+    label GP1
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP2
+    num 4
+    label GP2
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP3
+    num 5
+    label GP3
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP4
+    num 6
+    label GP4
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP5
+    num 7
+    label GP5
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP6
+    num 9
+    label GP6
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP7
+    num 10
+    label GP7
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP8
+    num 11
+    label GP8
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP9
+    num 12
+    label GP9
+    loc left
+    funcmap
+    dir out
+  end pin
+
+  begin pin GP10
+    num 14
+    label GP10
+    loc left
+    funcmap
+    dir in
+  end pin
+
+  begin pin GP11
+    num 15
+    label GP11
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP12
+    num 16
+    label GP12
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP13
+    num 17
+    label GP13
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP14
+    num 19
+    label GP14
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP15
+    num 20
+    label GP15
+    loc left
+    funcmap
+  end pin
+
+  begin pin GP16
+    num 21
+    label GP16
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP17
+    num 22
+    label GP17
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP18
+    num 24
+    label GP18
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP19
+    num 25
+    label GP19
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP20
+    num 26
+    label GP20
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP21
+    num 27
+    label GP27
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP22
+    num 29
+    label GP22
+    loc right
+  end pin
+
+  begin pin GP26
+    num 31
+    label GP26
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP27
+    num 32
+    label GP27
+    loc right
+    funcmap
+  end pin
+
+  begin pin GP28
+    num 34
+    label GP28
+    loc right
+    funcmap
+    invcirc
+  end pin
+
+end slot
+
+begin slot adc
+
+	shape box
+	attr_invis device THING ADC
+  attr_invis -sym-source       edakrill/patrickhread
+  attr_invis -sym-copyright    (C) 2026 Patrick Head
+  attr_invis -sym-license-dist GPLv2
+  attr_invis -sym-license-use  Public Domain
+
+  begin pin ADC_VREF
+    num 35
+    label ADC_VREF
+    loc right
+  end pin
+
+end slot
+
+begin slot debug
+
+	shape box
+	attr_invis device THING Debug
+  attr_invis -sym-source       edakrill/patrickhread
+  attr_invis -sym-copyright    (C) 2026 Patrick Head
+  attr_invis -sym-license-dist GPLv2
+  attr_invis -sym-license-use  Public Domain
+
+  begin pin SWDIO
+    num 41
+    label SWDIO
+    loc bottom
+    dir in
+  end pin
+
+  begin pin SWCLK
+    num 43
+    label SWCLK
+    loc bottom
+  end pin
+
+end slot
+

@@ -1,0 +1,43 @@
+.\" Manpage for gensym.
+.\" Contact patrickhead@gmail.com to correct errors or typos
+.TH gensym 1 "31 August 2026" "0.9.3" "gensym User Manual"
+gensym version 1.0.0
+.SH NAME
+gensym \- symbol generator for Ringdove EDA
+.SH SYNOPSIS
+gensym -h
+
+gensym [-s] [-o <output name>] <file name> ...
+
+-s generate file(s) for each symbol slot
+-o use <output name> for output file(s)
+
+<file name> name of boxsym(.bs) definition file
+
+-h display help screen
+
+.SH DESCRIPTION
+A utility to generate lihata formatted schematic symbol files for the Ringdove
+EDA suite of software.  This is a C language drop in for the official Ringdove
+boxsym utility.
+.SH "SEE ALSO"
+Nothing
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Patrick Head (patrickhead@gmail.com)
+.SH COPYRIGHT
+Copyright 2026 Patrick Head
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
