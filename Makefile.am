@@ -40,13 +40,9 @@ install-data-hook:
 	   mkdir -p $(prefix)/share/doc/gensym; \
 	   cp -r $(DX_HTML_DIR) $(prefix)/share/doc/gensym; \
 	 fi
-	@echo installing gensym.pc
-	@mkdir -p $(prefix)/share/pkgconfig
-	@cp gensym.pc $(prefix)/share/pkgconfig/gensym.pc
 
 uninstall-hook:
 	@rm -rf $(prefix)/share/doc/gensym
-	@rm -rf $(prefix)/share/pkgconfig/gensym.pc
 
 code-stats:
 	@echo -n " total lines of source code: "; wc -l src/*.[ch] include/*.[ch] | tail -1 | sed -e 's/ total//' -e 's/^  *//'

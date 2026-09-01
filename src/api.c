@@ -171,12 +171,6 @@ int gensym(char *file_name, gensym_options *opts)
     width = MAX(psl->top->n, psl->bottom->n) + 2;
     width *= 4000;
 
-    if (height > width) width += 2000;  // space for device name
-    else height += 2000;
-
-    device_name_width = find_device_name_length(sy, slot_idx);
-    device_name_width *= 1500;
-
     if (height > width) dir = vertical;
     else dir = horizontal;
 
@@ -186,12 +180,14 @@ int gensym(char *file_name, gensym_options *opts)
         width += 1500;  // add in one row of text for device name
         if ((height - pin_name_width) < device_name_width)
           height += device_name_width - (height - pin_name_width);
+        width += (psl->left_width + psl->right_width) * 1500;
         break;
 
       case horizontal:
         height += 1500;  // add in one row of text for device name
         if ((width - pin_name_width) < device_name_width)
           width += device_name_width - (width - pin_name_width);
+        height += (psl->top_width + psl->bottom_width) * 1500;
         break;
     }
 
