@@ -1147,7 +1147,7 @@ static void lihata_add_symbol_pins(symbol *sy, int slot_idx, lht_node_t *node)
       break;
   }
 
-  for (i = 0; i < psl->right->n; i++)
+  for (i = psl->right->n - 1; i >= 0; i--)
   {
     lihata_add_symbol_pin(sy,
                           node,
@@ -1205,7 +1205,7 @@ static void lihata_add_symbol_pins(symbol *sy, int slot_idx, lht_node_t *node)
       break;
   }
 
-  for (i = 0; i < psl->bottom->n; i++)
+  for (i = psl->bottom->n - 1; i >= 0; i--)
   {
     lihata_add_symbol_pin(sy,
                           node,
