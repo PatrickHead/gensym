@@ -23,13 +23,13 @@ This is a C language utility that performs the same function as the official Rin
 <a id="installation"></a>
 ## Installation
 
-A reasonably modern version of GNU Autotools should be installed before installing @b xml from the source files.  At the time of writing this document, Autotools version 2.71 were used.
+A reasonably modern version of GNU Autotools should be installed before installing <b>gensym</b> from the source files.  At the time of writing this document, Autotools version 2.71 were used.
 
 To compile the source code, the standard build tools are required, such as GCC, binutils, make, etc.
 
 If you want to create the Doxygen API documentation, then of course Doxygen and friends need to installed.
 
-If you have obtained the @b xml source code from a GIT repository, then execute the `autoreconf` program while in the directory that the @b xml GIT clone is located.
+If you have obtained the <b>gensym</b> source code from a GIT repository, then execute the `autoreconf` program while in the directory that the <b>gensym</b> GIT clone is located.
 
 For both GIT clones and GNU Package tarballs, run the usual `./configure` followed by `make`.
 
