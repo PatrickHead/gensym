@@ -16,7 +16,7 @@ This is a C language utility that performs the same function as the official Rin
 <a id="introduction"></a>
 ## Introduction
 
-<b>gensym</b> is a CLI command the generates Ringdove EDA symbol files in standard lihata format.  <b>gensym</b> uses the same input file format as the official Ringdove boxsym command.  The <b>gensym</b> command has been created with a couple of objectives in mind.  The first is to correct a few auto placement and sizing issues with boxsym.  The second is to provide a foundation for expanding the symbol generation beyond rectangular box symbols in the future.  <b>gensym</b> also lends itself to high speed bulk symbol generation.
+<b>gensym</b> is a CLI command that generates Ringdove EDA symbol files in standard <b>lihata</b> format.  <b>gensym</b> uses the same input file format as the official Ringdove <b>boxsym</b> command.  The <b>gensym</b> command has been created with two objectives.  The first is to correct a few auto placement and sizing issues with boxsym.  The second is to provide a foundation for expanding the symbol generation beyond rectangular box symbols in the future.  <b>gensym</b> also lends itself to high speed bulk symbol generation.
 
 [Back to Table of Contents](#TOC)
 
